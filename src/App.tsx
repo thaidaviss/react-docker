@@ -1,36 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FontFamilyEnum } from '@constants/fontEnum';
+import { ConfigProvider, ThemeConfig } from 'antd';
+import './App.css';
+import { THEME } from './constants';
+import Router from './router';
 
+const configAntd: ThemeConfig = {
+  token: {
+    colorPrimary: THEME.COLOR.SUCCESS,
+    fontFamily: FontFamilyEnum.Quicksand,
+  },
+};
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <div></div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ConfigProvider theme={configAntd}>
+      <Router />
+      {/* <Button type={'primary'}>Button default</Button>
+      <Button type={'outline'}>Button hover</Button>
+      <Button type={'shadow'}>Button Outline</Button>
+      <Button type="primary" border="rounder">
+        Button Rounder
+      </Button>
+      <Loading /> */}
+      {/* <Heading level="heading_1">A</Heading>
+      <Heading level="display_2">A</Heading> */}
+    </ConfigProvider>
+  );
 }
 
-export default App
+export default App;
