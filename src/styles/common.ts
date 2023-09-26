@@ -52,7 +52,7 @@ export const HEADING_6 = css`
 `;
 
 export const TEXT = css`
-  font-family: ${FontFamilyEnum.Montserrat};
+  font-family: ${FontFamilyEnum.Lato};
   font-weight: ${FontWeightEnum.Normal};
 `;
 export const TEXT_LARGE = css`

@@ -19,6 +19,7 @@ import {
 
 export const THEME = {
   COLOR: {
+    TEXT_PRIMARY: '#253D4E',
     WHITE: 'white',
     PRIMARY: '#46BCF2',
     SUCCESS: '#16C79A',

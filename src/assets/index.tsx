@@ -8,3 +8,8 @@ export { ReactComponent as SearchIcon } from './icons/search.svg';
 export { ReactComponent as LoadingIcon } from './icons/loading.svg';
 export { ReactComponent as AppsIcon } from './icons/apps.svg';
 export { ReactComponent as FireIcon } from './icons/fire.svg';
+export { ReactComponent as HeadsetIcon } from './icons/headset.svg';
+export { ReactComponent as PaperPlaneIcon } from './icons/paper-plane.svg';
+export { ReactComponent as TimeFastIcon } from './icons/time-fast.svg';
+export { ReactComponent as AddressIcon } from './icons/address.svg';
+export { ReactComponent as HeadsetGreenIcon } from './icons/headset_1.svg';

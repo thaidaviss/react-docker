@@ -67,6 +67,13 @@ table {
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"),
+    url("assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
+
 
 :root {
   font-family: Quicksand;

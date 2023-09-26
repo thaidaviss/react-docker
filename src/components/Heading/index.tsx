@@ -22,6 +22,7 @@ type TLevel =
   | 'display_1';
 interface IProps extends PropsWithChildren {
   level: TLevel;
+  className?: string;
 }
 const styleConfig = {
   heading_6: HEADING_6,
@@ -33,8 +34,12 @@ const styleConfig = {
   display_2: DISPLAY_2,
   display_1: DISPLAY_1,
 };
-function Heading({ level = 'heading_5', ...props }: IProps) {
-  return <HeadingStyle level={level}>{props.children}</HeadingStyle>;
+function Heading({ level = 'heading_5', className, ...props }: IProps) {
+  return (
+    <HeadingStyle level={level} className={className}>
+      {props.children}
+    </HeadingStyle>
+  );
 }
 
 export default Heading;
