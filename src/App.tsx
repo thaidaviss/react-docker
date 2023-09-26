@@ -1,6 +1,7 @@
 import { FontFamilyEnum } from '@constants/fontEnum';
 import { ConfigProvider, ThemeConfig } from 'antd';
 import './App.css';
+import Loading from '@components/Loading';
 import { THEME } from './constants';
 import Router from './router';
 
@@ -23,6 +24,7 @@ function App() {
       <Loading /> */}
       {/* <Heading level="heading_1">A</Heading>
       <Heading level="display_2">A</Heading> */}
+      <Loading />
     </ConfigProvider>
   );
 }
